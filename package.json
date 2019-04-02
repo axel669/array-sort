@@ -1,0 +1,36 @@
+{
+  "name": "@axel669/array-sort",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine \"tests/**/*.spec.js\" --random=false || true",
+    "ci": "jasmine \"tests/**/*.spec.js\" --random=false",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axel669/array-sort.git"
+  },
+  "keywords": [
+    "sort"
+  ],
+  "author": "Axel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/axel669/array-sort/issues"
+  },
+  "homepage": "https://github.com/axel669/array-sort#readme",
+  "devDependencies": {
+    "@axel669/teascript": "^0.14.4",
+    "jasmine": "^3.3.1",
+    "jasmine-spec-reporter": "^4.2.1",
+    "rollup": "^1.8.0"
+  },
+  "files": [
+    "index.js",
+    "/es6",
+    "/standalone"
+  ],
+  "dependencies": {}
+}
