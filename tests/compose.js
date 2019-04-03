@@ -31,4 +31,35 @@ describe("compose", () => {
                 {a: 2},
             ]);
     });
+
+    it("prop + reverse + number/prop + reverse + string", () => {
+        const items = [
+            {type: "A", index: 1},
+            {type: "A", index: 2},
+            {type: "B", index: 1},
+            {type: "B", index: 3},
+            {type: "B", index: 10},
+            {type: "C", index: 9},
+        ];
+        items.sort(
+            sort.compose(
+                sort.reverse(
+                    sort.prop(".index", sort.number)
+                ),
+                sort.reverse(
+                    sort.prop(".type", sort.string)
+                )
+            )
+        );
+
+        expect(items)
+            .toEqual([
+                {type: "B", index: 10},
+                {type: "C", index: 9},
+                {type: "B", index: 3},
+                {type: "A", index: 2},
+                {type: "B", index: 1},
+                {type: "A", index: 1},
+            ])
+    });
 });

@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/axel669/array-sort#readme",
   "devDependencies": {
-    "@axel669/jasmine-basic-reporter": "^1.0.0",
+    "@axel669/jasmine-basic-reporter": "^1.1.0",
     "@axel669/teascript": "^0.14.4",
     "jasmine": "^3.3.1",
     "rollup": "^1.8.0"
